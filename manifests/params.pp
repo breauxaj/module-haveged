@@ -9,7 +9,7 @@ class haveged::params {
   $haveged_package_ensure = 'latest'
 
   case $::operatingsystem {
-    'CentOS', 'Debian', 'OracleLinux', 'RedHat': {
+    'CentOS', 'Debian', 'OracleLinux', 'RedHat', 'Scientific': {
       $haveged_package = 'haveged'
       $haveged_service = 'haveged'
     }
